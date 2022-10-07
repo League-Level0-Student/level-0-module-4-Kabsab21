@@ -1,22 +1,26 @@
 package _02_boolean._5_googly_eyes;
 
 import processing.core.PApplet;
-import processing.core.PImage;
+import processing.core.PImage;        
+
+
 
 /*
  * Goal: Put googly eyes on a face!
  * 
  * Instructions:
  * 1. Find an image on the Internet and drop it into the /images folder at the
- *    top level of this module. It can be anything as long as it has large eyes!
+ *    top level of this module. It can be anything as long as it has large eyes! done
  * 
  * 2. Declare a variable for the image:
- *    PImage face;
- * 
+ *    PImage face; done
+ 
  * 3. In your setup() method, import your image using the following code:
- *    face = loadImage("face.jpg");
+ *    face = loadImage("face.jpg"); done
+ *    
  * 
- * 4. Resize your face image to the size of the window using the resize() method.
+ * 
+ * 4. Resize your face image to the size of the window using the resize() method. done
  * 
  * 5. In the draw() method, place a white ellipse over the left eye of your image.
       HINT: To find out where to put it, add code to print the mouseX and
@@ -41,15 +45,16 @@ public class GooglyEyes extends PApplet {
     static final int HEIGHT = 600;
     
     PImage face;
-    
+    String img = "download.jpeg";
+   
     @Override
     public void settings() {
-        size(WIDTH, HEIGHT);
+        size(800, 600);
     }
     
     @Override
     public void setup() {
-
+    	 face = loadImage("download.jpeg"); 
     }
 
     @Override
