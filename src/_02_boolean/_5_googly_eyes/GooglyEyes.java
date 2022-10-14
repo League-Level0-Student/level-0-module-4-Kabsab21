@@ -49,17 +49,20 @@ public class GooglyEyes extends PApplet {
    
     @Override
     public void settings() {
-        size(800, 600);
+        size(WIDTH, HEIGHT);
     }
     
     @Override
     public void setup() {
-    	 face = loadImage("download.jpeg"); 
+    	 face = loadImage("Ostrich.jpg"); 
+    	 
+    	 face.resize(WIDTH, HEIGHT);
+
     }
 
     @Override
     public void draw() {
-
+    	background(face);
     }
 
     static public void main(String[] args) {
